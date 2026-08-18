@@ -70,7 +70,7 @@ h1 {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    justify-items: center;
 }
 
 .card {
@@ -161,4 +161,54 @@ button:hover {
     border: 1px solid var(--ter);
 
 }
+
+.form-linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.input-campo{
+    flex: 1 1 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        width: revert;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px)  and (max-width: 1200px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    form {
+        width: 600px;
+    }
+      
+}
+
 
