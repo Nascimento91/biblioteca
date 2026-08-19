@@ -128,7 +128,7 @@ form{
 
 
 .form-item{
-    margin: 1rem 0;
+    margin: 1rem 1gin;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +186,10 @@ button:hover {
         flex-direction: column;
     }
     form {
-        width: revert;
+        width: 60%;
+    }
+    .maim-detalhes {
+      flex-direction: column;
     }
 }
 
@@ -196,7 +199,7 @@ button:hover {
     }
 
     form {
-        width: 100%;
+        width: 60%;
     }
 }
 
