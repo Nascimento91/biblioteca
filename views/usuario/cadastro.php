@@ -3,8 +3,8 @@ require_once __DIR__ . "/../../templates/cabecalho.php";
 ?>
 
 <main class="main-detalhes">
-    <form action="" method="post" enctype="multipart/form-data">
-        <img src="https://picsum.photos/100" alt="" class="logo">
+    <form action="/biblioteca/controllers/usuario_add_controller.php" method="post" enctype="multipart/form-data">
+        <img src="/biblioteca/imgs/logo_sem_fundo.png" alt="" class="logo">
 
         <div class="form-item">
             <label for="nome">Nome</label>
